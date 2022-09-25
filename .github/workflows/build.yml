@@ -13,7 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Sys Info
+      - name: check builder
+        run: |
+          lscpu
+
+      - name: Setup
         run: |
           bash ci/deb_install.sh
 
