@@ -25,4 +25,4 @@ jobs:
         run: |
           PATH="$HOME/.cargo/bin:$PATH"
           cd rust_shm
-          cargo b
+          cargo r
